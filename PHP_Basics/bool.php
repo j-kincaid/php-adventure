@@ -23,4 +23,9 @@ $string_one .= "\n";
 // prepend to a string
 $string_one = 'I am ' . $string_one;
 echo $string_one;
+
+$isReady = true;
+var_dump($isReady);
+$isReady = false;
+var_dump($isReady);
 ?>
