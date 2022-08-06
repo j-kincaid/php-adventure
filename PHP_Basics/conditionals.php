@@ -17,9 +17,14 @@ $b = "10";
 // var_dump($a === $b);
 // var_dump($string_one == 'Learning to display "Hello Jessica" to the screen.');
 
-if ($string_one == 'Learning to display "Hello Jessica" to the screen.') {
+if ($string_one == 'Learning to display "Hello Jessica!" to the screen.') {
     echo 'the values match.';
+} elseif ($string_one == ""){
+    echo '$string_one is empty';
+} else {
+    echo 'the values DO NOT match';
 }
+
 ?> 
 
 
