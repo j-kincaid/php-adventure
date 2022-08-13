@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 $name = 'Jessica';
 
 $string_one = 'Learning to display ';
