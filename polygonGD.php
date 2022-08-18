@@ -17,13 +17,14 @@ $image = imagecreatetruecolor(250, 250);
 
 // allocate colors
 $bg   = imagecolorallocate($image, 0, 0, 0);
-$blue = imagecolorallocate($image, 0, 0, 255);
+// $blue = imagecolorallocate($image, 0, 0, 255);
 
+$green = imagecolorallocate($image, 0, 255, 0);
 // fill the background
 imagefilledrectangle($image, 0, 0, 249, 249, $bg);
 
 // draw a polygon
-imagefilledpolygon($image, $values, 6, $blue);
+imagefilledpolygon($image, $values, 6, $green);
 
 
 // flush image
