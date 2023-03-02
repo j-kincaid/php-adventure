@@ -22,7 +22,7 @@ output from your script, including html tags.
 
 $question = 'What would you like for your birthday?';
 $gift_value ="";
-setcookie($question, $gift_value, time()+3600);
+setcookie($question, $gift_value);
 /* Cookie expires in 1 hour */
 ?>
 <!DOCTYPE html>
@@ -35,12 +35,14 @@ setcookie($question, $gift_value, time()+3600);
         
 
 
-<!-- sending data should be a POST request -->
-        <form action="cookie_form.php" method="POST">
+        <form action="cookie_form.php" method="GET">
         What would you like for your birthday? <input type="text" name="gift_value">
+        <input type="hidden" name="gift" $gift_value="<?php 
+        echo $gift_value;
+        ?>">
         <input type="submit">
         <?php
-        echo $_COOKIE[$value];
+        echo $_COOKIE[$question];
         ?>
         
         </form>
