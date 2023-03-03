@@ -1,8 +1,3 @@
-<?php
-setcookie("test", "cookiedata");
-echo "cookiedata";
-?>
-
 <html>
 
 <!-- 
